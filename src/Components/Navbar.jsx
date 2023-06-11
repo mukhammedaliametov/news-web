@@ -6,32 +6,33 @@ const Navbar = () => {
 
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
+  const closeMobile = () => setClick(false)
 
   return (
     <>
       <div className="header">
         <Link className="logo" to="/">
-          IT.News
+        <i class="fa-solid fa-globe"></i> IT.News 
         </Link>
-        <nav className="navbar">
+        <nav className={click ? 'navbar active' : 'navbar'}>
           <ul>
-            <li>
+            <li onClick={closeMobile}>
               <i class="fa-solid fa-house"></i>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={closeMobile}>
               <i class="fa-solid fa-circle-info"></i>
               <Link to="/about">About</Link>
             </li>
-            <li>
+            <li onClick={closeMobile}>
               <i class="fa-sharp fa-solid fa-server"></i>
               <Link to="/services">Services</Link>
             </li>
-            <li>
+            <li onClick={closeMobile}>
               <i class="fa-solid fa-newspaper"></i>
               <Link to="/news">News</Link>
             </li>
-            <li>
+            <li className="border-b" onClick={closeMobile}>
               <i class="fa-solid fa-address-book"></i>
               <Link to="/contact">Contact</Link>
             </li>

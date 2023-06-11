@@ -1,55 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-$headerFont: 'Montserrat', sans-serif;
-$logoFont: 'Ubuntu', sans-serif;
+$headerFont: "Montserrat", sans-serif;
+$logoFont: 'Josefin Sans', sans-serif;
 $globalColor: blue;
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  .logo{
+  .logo {
     text-decoration: none;
     font-size: 2.6rem;
     font-family: $logoFont;
     color: $globalColor;
   }
-  .navbar{
-    ul{
+  .navbar {
+    ul {
       display: flex;
-      li{
+      li {
         list-style-type: none;
         padding: 0px 18px;
-        i{
+        i {
           padding: 0px 3px;
           color: $globalColor;
           cursor: pointer;
         }
-        a{
+        a {
           text-decoration: none;
           font-size: 1rem;
           font-family: $headerFont;
           color: $globalColor;
-          &:hover{
+          &:hover {
             border-bottom: 1px solid $globalColor;
             padding-bottom: 2px;
           }
         }
       }
     }
+    @media only screen and (max-width: 920px) {
+      & {
+        background-color: $globalColor;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        height: 0;
+        padding: 0;
+        transition: 0.5s ease-in-out;
+        ul {
+          display: none;
+          li {
+            padding: 30px;
+            border-bottom: 1px solid #fff;
+            i {
+              color: #fff;
+            }
+            a {
+              color: #fff;
+            }
+          }
+          .border-b {
+            border-bottom: none;
+          }
+        }
+        &.active {
+          height: 53vh;
+          padding: 20px 10px;
+          ul {
+            display: inline;
+          }
+        }
+      }
+    }
   }
 
-  .networks{
-    .fa-brands{
+  .networks {
+    .fa-brands {
       padding: 0px 10px;
       color: $globalColor;
       font-size: 1.1rem;
     }
+    @media only screen and (max-width: 1040px) {
+      & {
+        display: none;
+      }
+    }
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
+    font-size: 1.4rem;
+    color: $globalColor;
+  }
+
+  @media only screen and (max-width: 920px) {
+    padding: 10px 20px;
+    .hamburger {
+      display: block;
+    }
   }
 }
