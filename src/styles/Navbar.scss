@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$headerFont: 'Montserrat', sans-serif;
+$logoFont: 'Ubuntu', sans-serif;
+$globalColor: blue;
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  .logo{
+    text-decoration: none;
+    font-size: 2.6rem;
+    font-family: $logoFont;
+    color: $globalColor;
+  }
+  .navbar{
+    ul{
+      display: flex;
+      li{
+        list-style-type: none;
+        padding: 0px 18px;
+        i{
+          padding: 0px 3px;
+          color: $globalColor;
+          cursor: pointer;
+        }
+        a{
+          text-decoration: none;
+          font-size: 1rem;
+          font-family: $headerFont;
+          color: $globalColor;
+          &:hover{
+            border-bottom: 1px solid $globalColor;
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .networks{
+    .fa-brands{
+      padding: 0px 10px;
+      color: $globalColor;
+      font-size: 1.1rem;
+    }
+  }
+
+  .hamburger{
+    display: none;
+  }
+}
