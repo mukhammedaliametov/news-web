@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 $headerFont: "Montserrat", sans-serif;
-$logoFont: 'Josefin Sans', sans-serif;
-$globalColor: blue;
+$logoFont: "Josefin Sans", sans-serif;
+$globalColor: #726bdf;
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 25px 50px;
   .logo {
     text-decoration: none;
     font-size: 2.6rem;
@@ -41,7 +41,12 @@ $globalColor: blue;
     }
     @media only screen and (max-width: 920px) {
       & {
-        background-color: $globalColor;
+        background: rgb(98, 101, 216);
+        background: linear-gradient(
+          145deg,
+          rgba(98, 101, 216, 1) 0%,
+          rgba(217, 137, 226, 1) 100%
+        );
         position: absolute;
         top: 70px;
         width: 100%;
@@ -97,7 +102,10 @@ $globalColor: blue;
   }
 
   @media only screen and (max-width: 920px) {
-    padding: 10px 20px;
+    padding: 15px 25px;
+    .logo {
+      font-size: 2rem;
+    }
     .hamburger {
       display: block;
     }
