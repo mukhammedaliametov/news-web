@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.dealers{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  text-align: center;
+  @import 'SectionTitle.scss';
+  .images{
+    align-items: center;
+    padding: 10px 0px;
+    img{
+      width: 15%;
+      padding: 10px 30px;
+    }
+  }
+}
