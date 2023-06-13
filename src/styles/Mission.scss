@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$globalFont: "Exo 2", sans-serif;
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.mission{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 50px 0px;
+  padding: 0px 20px;
+  gap: 6rem;
+  img{
+    width: 110%;
+  }
+  .titles{
+    flex: 1;
+    padding: 10px 30px;
+    span{
+      color: $globalColor;
+      font-size: 1.4rem;
+      font-family: $globalFont2;
+      padding: 15px 0px;
+    }
+    h1{
+      color: $globalColor;
+      font-size: 2rem;
+      font-family: $globalFont2;
+      border-bottom: 2px solid $globalColor;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .card{
+      .fa-check{
+        font-size: 1.2rem;
+        color: green;
+        padding: 10px;
+      }
+      .fa-close{
+        @extend .fa-check;
+        color: red;
+      }
+      p{
+        color: $globalColor;
+        font-family: $globalFont;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

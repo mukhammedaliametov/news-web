@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import heroBg from "../assets/hero-bg.jpg";
 import "../styles/Home.scss";
 import Dealers from "../Components/Dealers";
+import Mission from "./Mission";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <img src={heroBg} alt="" />
       </div>
       <Dealers />
+      <Mission />
     </>
   );
 };
