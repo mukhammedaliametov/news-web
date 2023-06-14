@@ -39,6 +39,16 @@ const Mission = () => {
             <i class="fa-solid fa-check"></i> Be the first to find IT news on our website
           </p>
         </div>
+        <div className="card">
+          <p>
+            <i class="fa-solid fa-check"></i> We share not only Karakalpakstan but foreign IT news
+          </p>
+        </div>
+        <div className="card">
+          <p>
+            <i className="fas fa-close"></i> The website will be closed for a specified period of time
+          </p>
+        </div>
       </div>
     </div>
   );
