@@ -4,6 +4,7 @@ import heroBg from "../assets/hero-bg.jpg";
 import "../styles/Home.scss";
 import Dealers from "../Components/Dealers";
 import Mission from "./Mission";
+import Activity from "./Activity";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       </div>
       <Dealers />
       <Mission />
+      <Activity />
     </>
   );
 };

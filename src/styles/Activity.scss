@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$globalFont: "Exo 2", sans-serif;
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.activity {
+  padding: 30px 50px;
+  @import "./SectionTitle.scss";
+  .activitys {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+    margin: 50px 0px;
+    .card {
+      padding: 20px 10px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
+      position: relative;
+      .card-front {
+        img {
+          width: 40%;
+        }
+        h1{
+          color: $globalColor;
+          font-family: $globalFont2;
+          font-size: 1.2rem;
+          padding: 10px;
+        }
+        &:hover .card-back{
+          opacity: 1;
+        }
+      }
+      .card-back {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(98, 101, 216);
+        background: linear-gradient(
+          145deg,
+          rgba(98, 101, 216, 1) 0%,
+          rgba(217, 137, 226, 1) 100%
+        );
+        padding: 50px 30px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: .5s ease;
+        align-items: center;
+        p{
+          color: #fff;
+          font-family: $globalFont2;
+        }
+      }
+      &:hover .card-back{
+        opacity: 1;
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    padding: 30px;
+    .activitys{
+      grid-template-columns: auto;
+    }
+  }
+}
