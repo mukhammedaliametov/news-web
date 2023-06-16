@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$globalFont: "Exo 2", sans-serif;
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.testimonial{
+  padding: 20px 40px;
+  @import 'SectionTitle.scss';
+  .testimonial-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    margin: 50px 20px;
+    .card{
+      background-color: #fff;
+      text-align: center;
+      position: relative;
+      border-radius: 5px;
+      padding-bottom: 30px;
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+    }
+    h1{
+      font-family: $globalFont2;
+      color: #6265d8;
+      padding: 20px 0px;
+      font-size: 1.4rem;
+    }
+    p{
+      padding: 0px 10px;
+      font-family: $globalFont2;
+      color: #6265d8;
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 920px){
+    padding: 30px 10px;
+    .testimonial-cards{
+      grid-template-columns: auto;
+    }
+  }
+}

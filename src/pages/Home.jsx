@@ -5,6 +5,7 @@ import "../styles/Home.scss";
 import Dealers from "../Components/Dealers";
 import Mission from "./Mission";
 import Activity from "./Activity";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <Dealers />
       <Mission />
       <Activity />
+      <Testimonial />
     </>
   );
 };
