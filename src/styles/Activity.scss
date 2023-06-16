@@ -28,6 +28,7 @@ $globalColor: #6265d8;
           font-family: $globalFont2;
           font-size: 1.2rem;
           padding: 10px;
+          text-transform: capitalize;
         }
         &:hover .card-back{
           opacity: 1;
