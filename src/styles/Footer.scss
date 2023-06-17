@@ -5,13 +5,13 @@ $headerFont: "Montserrat", sans-serif;
 $logoFont: "Josefin Sans", sans-serif;
 $globalColor: #726bdf;
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   padding: 10px 50px;
   background-color: $globalColor;
   box-shadow: inset 0 0 0 1000px #0000003b;
-  .first-footer{
+  .first-footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
@@ -23,38 +23,54 @@ $globalColor: #726bdf;
       font-family: $logoFont;
       color: #fff;
     }
-    .pages-networks{
+    .pages-networks {
       display: flex;
-      a{
+      justify-content: space-evenly;
+      a {
         padding: 0px 10px;
         text-decoration: none;
         color: #fff;
         font-family: $headerFont;
       }
-      .networks{
-        padding-left: 20px;
-        a{
+      .networks {
+        margin-left: 20px;
+        a {
           font-size: 1.2rem;
         }
       }
     }
   }
-  .second-footer{
+  .second-footer {
     padding: 20px 0px;
     font-size: $headerFont;
     color: #fff;
     font-family: $headerFont;
   }
-  @media only screen and (max-width: 920px){
-    .footer{
-      padding: 20px 10px;
-      .first-footer{
-        padding: 20px 0px;
-        display: grid;
-        grid-template-columns: auto;
+  @media only screen and (max-width: 920px) {
+    padding: 40px 30px;
+    padding-bottom: 10px;
+    .first-footer {
+      flex-direction: column;
+      padding: 10px 0px;
+      align-items:flex-start;
+      width: 100%;
+      .pages-networks {
+        flex-direction: column;
+        .links{
+          display: flex;
+          flex-direction: column;
+          a{
+            padding: 20px 0px;
+            border-bottom: 1px solid #fff;
+          }
+        }
+        .networks{
+          padding: 15px 0px;
+          margin-top: 15px;
+          margin-left: 0px;
+        }
       }
+      
     }
-    
-    
   }
 }

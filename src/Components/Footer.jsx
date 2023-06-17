@@ -10,11 +10,13 @@ const Footer = () => {
           <i class="fa-solid fa-globe"></i> IT.News
         </Link>
         <div className="pages-networks">
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/news">News</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/#activity">Activity</Link>
+          <div className="links">
+            <Link to="/about">About</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/news">News</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/#activity">Activity</Link>
+          </div>
           <div className="networks">
             <a href="">
               <i class="fa-brands fa-telegram"></i>
