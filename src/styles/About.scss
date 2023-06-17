@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.about {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: calc(100vh - 100px);
+  align-items: center;
+  padding: 0px 120px;
+  .text-content {
+    padding: 10px;
+    width: 80%;
+    span {
+      font-family: $globalFont2;
+      color: $globalColor;
+      font-size: 1.2rem;
+    }
+    h1 {
+      padding-top: 10px;
+      font-family: $globalFont2;
+      color: $globalColor;
+      font-size: 2.2rem;
+    }
+    p {
+      color: $globalColor;
+      padding: 10px 0px;
+      font-size: 1.1rem;
+      font-family: $globalFont2;
+    }
+    @import "./Button.style.scss";
+  }
+  img{
+    width: 100%;
+  }
+  @media only screen and (max-width: 920px){
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin: 60px 0px;
+    .text-content{
+      padding-top: 20px;
+      width: 100%;
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
