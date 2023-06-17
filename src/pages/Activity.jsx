@@ -4,7 +4,7 @@ import { ActivityItems } from "../Components/ActivityItmes";
 
 const Activity = () => {
   return (
-    <div className="activity">
+    <div className="activity" id="activity">
       <h1 className="section-title">Our Activity</h1>
       <div className="activitys">
         {ActivityItems.map((item, index) => {

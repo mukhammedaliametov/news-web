@@ -7,6 +7,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import Footer from './Components/Footer'
+import Activity from './pages/Activity'
 
 function App() {
 
@@ -20,8 +22,10 @@ function App() {
             <Route path='/services' element={<Services />} /> 
             <Route path='/news' element={<News />} /> 
             <Route path='/contact' element={<Contact />} /> 
+            <Route path='/#activity' element={<Activity />} /> 
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

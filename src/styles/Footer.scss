@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+$headerFont: "Montserrat", sans-serif;
+$logoFont: "Josefin Sans", sans-serif;
+$globalColor: #726bdf;
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  background-color: $globalColor;
+  box-shadow: inset 0 0 0 1000px #0000003b;
+  .first-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    .logo {
+      text-decoration: none;
+      font-size: 2rem;
+      font-family: $logoFont;
+      color: #fff;
+    }
+    .pages-networks{
+      display: flex;
+      a{
+        padding: 0px 10px;
+        text-decoration: none;
+        color: #fff;
+        font-family: $headerFont;
+      }
+      .networks{
+        padding-left: 20px;
+        a{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .second-footer{
+    padding: 20px 0px;
+    font-size: $headerFont;
+    color: #fff;
+    font-family: $headerFont;
+  }
+  @media only screen and (max-width: 920px){
+    .footer{
+      padding: 20px 10px;
+      .first-footer{
+        padding: 20px 0px;
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+    
+    
+  }
+}
