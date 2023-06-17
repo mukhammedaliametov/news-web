@@ -65,6 +65,11 @@ $globalColor: #6265d8;
     padding: 30px;
     .activitys{
       grid-template-columns: auto;
+      .card{
+        .card-back{
+          padding: 20px 30px;
+        }
+      }
     }
   }
 }
