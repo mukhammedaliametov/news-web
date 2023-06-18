@@ -1,6 +1,5 @@
 import Img from '../assets/testimonals/1.jpeg';
 import Img2 from '../assets/testimonals/2.jpeg';
-import Img3 from '../assets/testimonals/3.jpg';
 
 export const TestimonialItems = [
   {

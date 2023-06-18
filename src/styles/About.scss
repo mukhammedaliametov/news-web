@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 $globalFont2: "Montserrat", sans-serif;
 $globalColor: #6265d8;
 
-.about {
+.first-about {
   display: grid;
   grid-template-columns: auto auto;
-  height: calc(100vh - 100px);
+  height: calc(90vh - 100px);
   align-items: center;
   padding: 0px 120px;
   .text-content {
@@ -27,6 +28,7 @@ $globalColor: #6265d8;
       padding: 10px 0px;
       font-size: 1.1rem;
       font-family: $globalFont2;
+      margin-bottom: 15px;
     }
     @import "./Button.style.scss";
   }
@@ -47,6 +49,29 @@ $globalColor: #6265d8;
       p{
         margin-bottom: 10px;
       }
+    }
+  }
+}
+
+.second-about{
+  @extend .first-about;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+  margin-bottom: 90px;
+  .text-content{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  @media only screen and (max-width: 920px){
+    padding: 10px;
+    flex-direction: column;
+    margin-top: -30px;
+    margin-bottom: 170px;
+    img{
+      width: 110%;
     }
   }
 }
