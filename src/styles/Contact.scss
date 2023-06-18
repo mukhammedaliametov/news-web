@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.contact{
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    width: 40%;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    span{
+      color: $globalColor;
+      font-family: $globalFont2;
+      font-size: 1.3rem;
+    }
+    input{
+      width: 100vh;
+      height: 40px;
+      padding: 0px 10px;
+      outline: none;
+      font-size: 1rem;
+      font-family: $globalFont2;
+      border: 1px solid $globalColor;
+      margin: 10px 0px;
+      border-radius: 5px;
+    }
+    textarea{
+      @extend input;
+      padding: 10px;
+      resize: none;
+      height: 30vh;
+    }
+    @import 'Button.style.scss';
+    .info{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin: 20px 10px;
+      gap: 2rem;
+      .card{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid $globalColor;
+        border-radius: 5px;
+        i{
+          font-size: 2rem;
+          color: $globalColor;
+          padding: 10px 0px;
+        }
+        p{
+          font-size: 1rem;
+          padding: 10px 0px;
+          color: $globalColor;
+          font-family: $globalFont2;
+        }
+        span{
+          font-size: 1rem;
+          width: 130%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    flex-direction: column;
+    padding: 50px 10px;
+    img{
+      display: none;
+    }
+    .form{
+      width: 100%;
+      padding: 0px 10px;
+      input{
+        width: 100%;
+      }
+      .info{
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
