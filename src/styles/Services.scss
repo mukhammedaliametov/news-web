@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$globalFont2: "Montserrat", sans-serif;
+$globalColor: #6265d8;
+
+.services{
+  min-height: 100vh;
+  padding: 60px;
+  h1{
+    color: $globalColor;
+    font-family: $globalFont2;
+    font-size: 1.8rem;
+  }
+  p{
+    color: $globalFont2;
+    font-family: $globalFont2;
+    font-weight: 600;
+    padding: 5px 0px;
+    color: $globalColor;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 2rem;
+    .card{
+      padding: 20px 10px;
+      border: 1px solid $globalColor;
+      border-radius: 10px;
+      text-align: center;
+      i{
+        font-size: 2.5rem;
+        color: #6265d8;
+        border: 1px solid $globalColor;
+        border-radius: 50%;
+        padding: 25px;
+      }
+      h1{
+        color: $globalColor;
+        font-family: $globalFont2;
+        padding: 10px 0px;
+        font-size: 1.8rem;
+      }
+      span{
+        color: $globalColor;
+        display: flex;
+        font-family: $globalFont2;
+        text-align: left;
+        padding: 0px 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 920px){
+    padding: 60px 10px;
+    .cards{
+      grid-template-columns: auto;
+      padding: 20px 10px;
+    }
+  }
+}
