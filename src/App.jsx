@@ -9,6 +9,7 @@ import News from './pages/News'
 import Contact from './pages/Contact'
 import Footer from './Components/Footer'
 import Activity from './pages/Activity'
+import SinglePage from './pages/SinglePage'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navbar />}>
             <Route index element={<Home />} />
+            <Route path='/blog/:slug' element={<SinglePage />} /> 
             <Route path='/about' element={<About />} /> 
             <Route path='/services' element={<Services />} /> 
             <Route path='/news' element={<News />} /> 

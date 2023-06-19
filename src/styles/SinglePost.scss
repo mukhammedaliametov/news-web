@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+$headerFont: "Montserrat", sans-serif;
+$globalColor: #726bdf;
+
+.single-post{
+  text-align: center;
+  padding: 30px 0px;
+  margin-bottom: 50px;
+  h4{
+    color: $globalColor;
+    font-family: $headerFont;
+    padding: 10px 0px;
+    font-size: 2rem;
+  }
+  img{
+    width: 50%;
+    border-radius: 10px;
+  }
+  .title{
+    padding: 10px 210px;
+    color: $globalColor;
+    font-family: $headerFont;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  @import 'Button.style.scss';
+  @media only screen and (max-width: 920px){
+    img{
+      width: 100%;
+      padding: 20px;
+    }
+    .title{
+      padding: 20px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}
